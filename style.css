@@ -1,0 +1,138 @@
+
+body{
+    margin: 0;
+    font-size: 1.1rem;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    background: linear-gradient(180deg, #C7D766 0%, 
+    rgba(11, 64, 19, 0.964348) 21.35%, rgba(13, 128, 31, 0.9) 52.08%,
+     rgba(3, 73, 40, 0.76) 100%);
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.calculator{
+    background: linear-gradient(180deg, rgba(222, 196, 65, 0.229) 0%, rgba(185, 155, 71, 0.17) 28.65%, rgba(186, 157, 69, 0.204) 41.25%, rgba(197, 183, 52, 0.077) 
+    87.19%, rgba(119, 104, 23, 0.73) 100%);
+    backdrop-filter: blur(10px);
+    width: 450px ;
+    color: aliceblue;
+    padding: 2rem 1.5rem;
+    border-radius: 5px;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    "display display display display" 
+    "ac c percentage division"
+    "btn7 btn8 btn9 btnx"
+    "btn4 btn5 btn6 minus"
+    "btn1 btn2 btn3 add"
+    "btn0 btn0 dot equals";
+
+    position: relative;
+}
+.calculator div{
+    background: rgba(7, 46, 38, 0.614);
+    filter: drop-shadow(-12px 12px 14px rgba(0, 0, 0, 0.25));
+    color: aliceblue;
+    height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+}
+.calculator div.display{
+    grid-area:display;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+.btn-ac{
+    grid-area: ac;
+}
+.btn-c{
+    grid-area: c;
+}
+.btn-percentage{
+    grid-area: percentage;
+}
+.btn-division{
+    grid-area: division;
+}
+.btn-7{
+    grid-area: btn7;
+}
+.btn-8{
+    grid-area: btn8;
+}
+.btn-9{
+    grid-area: btn9;
+}
+.btn-x{
+    grid-area: btnx;
+}
+.btn-4{
+    grid-area: btn4;
+}
+.btn-5{
+    grid-area: btn5;
+}
+.btn-6{
+    grid-area: btn6;
+}
+.btn-minus{
+    grid-area: minus;
+}
+.btn-1{
+    grid-area: btn1;
+}
+.btn-2{
+    grid-area: btn2;
+}
+.btn-3{
+    grid-area: btn3;
+}
+.btn-add{
+    grid-area: add;
+}
+.btn-0{
+    grid-area: btn0;
+}
+.btn-dot{
+    grid-area: dot;
+}
+.btn-equals{
+    grid-area: equals;
+}
+.circle{
+    background: linear-gradient(to right, rgb(7, 68, 71), rgb(49, 49, 163));
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    position: relative;
+    top: 220px;
+    left: 60px;
+}
+.prank {
+    animation: shake 0.5s ease-in;
+}
+@keyframes shake {
+    0%{
+        transform : translateX(-10px);
+    }
+    50%{
+        transform : translateX(-10px);
+    }
+    75%{
+        transform : translateX(-10px);
+    }
+    100%{
+        transform : translateX(-10px);
+    }
+}
